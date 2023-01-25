@@ -306,7 +306,7 @@ async def create_prod():
 
 @app.get("/tovar_top10/")
 async def read_tovar_10():
-    # s = select(magazin)
+    # ssss = select(magazin)
     # result = engine.execute(s)
     #eng = sql.create_engine('mysql://root:1234@localhost/test?charset=utf8')
     res = engine.execute('SELECT prodazhi.magazin_prodavshi_id, tovar.naimenovanie FROM tovar, prodazhi where tovar.price = 70 and prodazhi.price = 30;')
